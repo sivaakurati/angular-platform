@@ -1,0 +1,39 @@
+<div class="panel panel-success" id="loginBox">
+  <div class="panel-heading">Sign in to start your session</div>
+  <div class="panel-body">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" role="form" id="form">
+      <div class="form-group input-group">
+        <span class="input-group-addon"><i class="fa fa-user-o"></i></span>
+        <input
+          type="email"
+          formControlName="username"
+          class="form-control"
+          placeholder="Your Username"
+          [ngClass]="{ 'is-invalid': submitted && f.username.errors }"
+        />
+      </div>
+      <br />
+      <div class="form-group input-group">
+        <span class="input-group-addon"><i class="fa fa-key"></i></span>
+        <input
+          type="password"
+          formControlName="password"
+          class="form-control"
+          placeholder="Your Password"
+          [ngClass]="{ 'is-invalid': submitted && f.password.errors }"
+        />
+      </div>
+      <br />
+      <div align="center">
+        <button
+          style="width:100%;background-color:#00a65a !important;border-color:#00a65a !important;"
+          type="submit"
+          [disabled]="loading"
+          class="btn btn-success"
+        >
+          <i class="fa fa-lock"></i>&nbsp;Login
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

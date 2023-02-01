@@ -1,0 +1,91 @@
+<aside class="main-sidebar">
+  <div class="user-panel" style="background: #000;">
+    <div class="pull-left image">
+      <img src="../../../assets/img/avatar5.png" class="img-circle" />
+    </div>
+    <div class="pull-left info">
+      <p>Siva Kumar</p>
+      <a href="#"
+        ><i
+          class="fa fa-circle text-success"
+          style="color: #00a65a !important;"
+        ></i>
+        Online</a
+      >
+    </div>
+  </div>
+  <section class="sidebar">
+    <ul class="sidebar-menu">
+      <li>
+        <a href="#"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a>
+      </li>
+
+      <!-- Settings -->
+      <li class="treeview">
+        <a href="#">
+          <i class="fa fa-cog"></i> <span>Settings</span>
+          <i class="fa fa-angle-left pull-right"></i>
+        </a>
+        <ul class="treeview-menu">
+          <li class="">
+            <a href="#"><i class="fa fa-angle-double-right"></i>System</a>
+          </li>
+          <li class="">
+            <a [routerLink]="['/application']"
+              ><i class="fa fa-angle-double-right"></i>Application</a
+            >
+          </li>
+          <li class="">
+            <a [routerLink]="['/environment']"
+              ><i class="fa fa-angle-double-right"></i>Environment</a
+            >
+          </li>
+        </ul>
+      </li>
+
+      <!-- Backend -->
+      <li class="treeview">
+        <a href="#">
+          <i class="fa fa-database"></i> <span>Backend</span>
+          <i class="fa fa-angle-left pull-right"></i>
+        </a>
+        <ul class="treeview-menu">
+          <li class="">
+            <a href="#"><i class="fa fa-angle-double-right"></i>Database</a>
+          </li>
+          <li class="">
+            <a href="#"><i class="fa fa-angle-double-right"></i>Model</a>
+          </li>
+          <li class="">
+            <a href="#"><i class="fa fa-angle-double-right"></i>Query</a>
+          </li>
+          <li class="">
+            <a href="#"><i class="fa fa-angle-double-right"></i>Action</a>
+          </li>
+        </ul>
+      </li>
+
+      <!-- Frontend -->
+      <li class="treeview">
+        <a href="#">
+          <i class="fa fa-pagelines"></i> <span>Frontend</span>
+          <i class="fa fa-angle-left pull-right"></i>
+        </a>
+        <ul class="treeview-menu">
+          <li class="">
+            <a href="#"><i class="fa fa-angle-double-right"></i>View</a>
+          </li>
+          <li class="">
+            <a href="#"><i class="fa fa-angle-double-right"></i>Widget</a>
+          </li>
+          <li class="">
+            <a href="#"><i class="fa fa-angle-double-right"></i>Page</a>
+          </li>
+          <li class="">
+            <a href="#"><i class="fa fa-angle-double-right"></i>Theme</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+</aside>
